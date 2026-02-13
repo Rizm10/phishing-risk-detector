@@ -5,8 +5,7 @@ st.set_page_config(page_title= "Phishing Risk Detector", layout= "centered")
 
 @st.cache_resource
 def load_model():
-    return joblib.load("models/phishing_risk_model.joblib")
-
+    return joblib.load("phishing_risk_model.joblib")
 model = load_model()
 
 def risk_band(p):
